@@ -1,0 +1,14 @@
+.wrapper {
+  width: auto;
+  /* position: relative; */
+  border: 3px solid red;
+}
+
+.heroImage {
+  height: 900px;
+  object-fit: contain;
+}
+
+.text {
+  margin-left: 50px;
+}
