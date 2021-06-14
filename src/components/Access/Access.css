@@ -1,0 +1,55 @@
+.access-container {
+  margin: 3rem 0;
+  display: flex;
+  flex-wrap: nowrap;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  width: auto;
+  margin-right: 10rem;
+}
+
+.text-container > h1 {
+  font-weight: 800;
+}
+
+.map {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important;
+}
+
+.access {
+  padding: 5rem;
+  background: #fff;
+  margin-bottom: 0;
+  margin-top: 10;
+}
+
+.marker {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 18px;
+  height: 18px;
+  background-color: #000;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  user-select: none;
+  transform: translate(-50%, -50%);
+}
+
+@media only screen and (max-width: 768px) {
+  .access-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .text-container {
+    margin-right: 0rem;
+    margin-bottom: 5%;
+  }
+}

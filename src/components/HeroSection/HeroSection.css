@@ -1,14 +1,18 @@
-.wrapper {
-  width: auto;
-  /* position: relative; */
-  border: 3px solid red;
+.caro-wrapper {
+  width: 100% !important;
+  padding: 7rem 0 7rem 0;
 }
 
-.heroImage {
-  height: 900px;
-  object-fit: contain;
+.hero {
+  object-fit: cover;
+  width: 100% !important;
+  height: 70% !important;
 }
 
 .text {
   margin-left: 50px;
+}
+
+.hero {
+  width: 1200px;
 }
