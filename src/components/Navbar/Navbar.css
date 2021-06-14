@@ -24,7 +24,6 @@
   text-decoration: none;
   align-items: center;
   width: 40%;
-  border: 3px solid red;
 }
 
 .nav-menu {
@@ -75,6 +74,9 @@
 }
 
 @media screen and (max-width: 960px) {
+  .navbar-logo {
+    width: 100%;
+  }
   .navbar-container {
     display: flex;
     justify-content: space-between;
@@ -98,7 +100,7 @@
   }
 
   .nav-menu.active {
-    background: #2997ab;
+    background: black;
     left: 0;
     opacity: 1;
     transition: all 0.5s ease;
