@@ -5,7 +5,7 @@ import intel from "../../images/intel.png";
 import jfa from "../../images/JFA.png";
 import konami from "../../images/konami.png";
 import cisco from "../../images/cisco.png";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 function Clients() {
   return (

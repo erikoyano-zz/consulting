@@ -3,7 +3,7 @@ import "./Access.css";
 import { AiFillPhone } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import { BiTime } from "react-icons/bi";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import map from "../../images/map.png";
 
 function Access() {

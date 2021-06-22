@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link } from "react-scroll";
+import { Link as Scrolling } from "react-scroll";
 import { GoX, GoThreeBars } from "react-icons/go";
 import "./Navbar.css";
 import logo from "../../images/logo.png";
@@ -36,9 +36,9 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link
-                activeClass="active"
+              <Scrolling
                 to="home-scroll"
+                activeClass="active"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -46,12 +46,12 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Home
-              </Link>
+              </Scrolling>
             </li>
             <li className="nav-item">
-              <Link
-                activeClass="active"
+              <Scrolling
                 to="about-scroll"
+                activeClass="active"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -59,10 +59,10 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 About
-              </Link>
+              </Scrolling>
             </li>
             <li className="nav-item">
-              <Link
+              <Scrolling
                 activeClass="active"
                 to="services-scroll"
                 spy={true}
@@ -72,11 +72,11 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Services
-              </Link>
+              </Scrolling>
             </li>
 
             <li className="nav-item">
-              <Link
+              <Scrolling
                 activeClass="active"
                 to="access-scroll"
                 spy={true}
@@ -86,7 +86,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Access
-              </Link>
+              </Scrolling>
             </li>
           </ul>
         </div>
