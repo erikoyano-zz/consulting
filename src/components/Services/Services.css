@@ -1,3 +1,9 @@
 .image-content {
   padding: 4rem;
 }
+
+@media screen and (max-width: 425px) {
+  .image-content {
+    padding: 0rem;
+  }
+}

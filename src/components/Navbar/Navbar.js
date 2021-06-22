@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { Link as Link1 } from "react-scroll";
-// import { Link as Link2 } from "react-router-dom";
+import { Link } from "react-scroll";
 import { GoX, GoThreeBars } from "react-icons/go";
 import "./Navbar.css";
 import logo from "../../images/logo.png";
 
 function Navbar() {
   const [click, setClick] = useState(false);
-  const [button, setButton] = useState(true);
+  const [, setButton] = useState(true);
 
   const handleClick = () => setClick(!click);
   const closeMobileMenu = () => setClick(false);
@@ -37,9 +36,9 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link1
+              <Link
                 activeClass="active"
-                to="home"
+                to="home-scroll"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -47,12 +46,12 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Home
-              </Link1>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link1
+              <Link
                 activeClass="active"
-                to="about"
+                to="about-scroll"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -60,12 +59,12 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 About
-              </Link1>
+              </Link>
             </li>
             <li className="nav-item">
-              <Link1
+              <Link
                 activeClass="active"
-                to="message"
+                to="services-scroll"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -73,21 +72,21 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Services
-              </Link1>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <Link1
+              <Link
                 activeClass="active"
-                to="jobs"
+                to="access-scroll"
                 spy={true}
                 smooth={true}
                 duration={1000}
                 className="nav-links"
                 onClick={closeMobileMenu}
               >
-                Contact
-              </Link1>
+                Access
+              </Link>
             </li>
           </ul>
         </div>

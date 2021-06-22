@@ -4,14 +4,14 @@ import { AiFillPhone } from "react-icons/ai";
 import { MdLocationOn } from "react-icons/md";
 import { BiTime } from "react-icons/bi";
 import Fade from "react-reveal/Fade";
-import map from "../../images/discuss.jpg";
+import map from "../../images/map.png";
 
 function Access() {
   return (
     <div className="content-block">
       <div className="container-wrapper">
-        <Fade duration={2000}>
-          <div className="title-container">
+        <Fade duration={4000}>
+          <div className="title-container" id="access-scroll">
             <h1>Access</h1>
           </div>
           <div className="access-container">
@@ -30,7 +30,7 @@ function Access() {
                 Hours: Mon-Fri　10:00 ~ 19:00
               </h2>
             </div>
-            <image src={map} />
+            <img src={map} className="access-map" alt="map" />
           </div>
         </Fade>
       </div>

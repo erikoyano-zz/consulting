@@ -1,5 +1,5 @@
 .component-block {
-  padding-left: 3rem;
+  padding: 3rem;
   align-content: center;
 }
 .block-wrapper {
@@ -9,13 +9,10 @@
 }
 
 .title-container {
-  margin: 0.5rem;
+  margin: 1rem;
   margin-top: 10;
+  margin-bottom: 2rem;
   text-align: center;
-}
-
-.profile {
-  width: 200px;
 }
 
 .intro-container {
@@ -25,10 +22,25 @@
   width: auto;
   justify-content: center;
   align-items: center;
-  padding: 5rem;
+  /* padding: 5rem; */
 }
 
 .intro-container > .profile {
   width: 20%;
   height: 20%;
+}
+
+@media screen and (max-width: 425px) {
+  .intro-container {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 0rem;
+  }
+
+  .intro-container > .profile {
+    width: 60%;
+  }
+  .text {
+    margin-left: 0;
+  }
 }

@@ -1,5 +1,5 @@
 .access-container {
-  margin: 3rem 0;
+  margin: 3rem;
   display: flex;
   flex-wrap: nowrap;
   width: auto;
@@ -13,7 +13,7 @@
 }
 
 .text-container > h1 {
-  font-weight: 800;
+  font-weight: bolder;
 }
 
 .map {
@@ -51,5 +51,54 @@
   .text-container {
     margin-right: 0rem;
     margin-bottom: 5%;
+  }
+
+  #access {
+    padding: 30px;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .access-container {
+    margin-bottom: 400px;
+  }
+
+  .text-container {
+    margin-bottom: 60px;
+  }
+
+  #access {
+    width: 100%;
+    background: #fff;
+    margin-top: -90px;
+  }
+
+  .map {
+    position: relative !important;
+    width: 50% !important;
+    height: 40% !important;
+    object-fit: contain !important;
+  }
+
+  .snsicons {
+    font-size: 20px;
+  }
+  .icons {
+    font-size: 20px;
+  }
+
+  .text-container > h2 {
+    font-size: 14px;
+  }
+  #access.block-featureblock {
+    height: auto;
+    margin-bottom: 300px;
+    margin-top: -30px;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .title-container > #access {
+    border: 3px solid red;
   }
 }
