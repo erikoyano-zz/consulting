@@ -1,6 +1,5 @@
 import React from "react";
 import "./Footer.css";
-import { Link } from "react-router-dom";
 import {
   GrInstagram,
   GrYoutube,
@@ -17,82 +16,57 @@ function Footer() {
         <div className="footer-link-wrapper">
           <div className="footer-link-items">
             <h2>About</h2>
-            <Link to="/sign-up">About</Link>
+            <a href="/">About</a>
           </div>
           <div className="footer-link-items">
             <h2>Services</h2>
-            <Link to="/">Service 1</Link>
-            <Link to="/">Service 2</Link>
-            <Link to="/">Service 3</Link>
-            <Link to="/">Service 4</Link>
+            <a href="/">Service 1</a>
+            <a href="/">Service 2</a>
+            <a href="/">Service 3</a>
+            <a href="/">Service 4</a>
           </div>
           <div className="footer-link-items">
             <h2>Case Study</h2>
-            <Link to="/">Case Study 1</Link>
-            <Link to="/">Case Study 2</Link>
-            <Link to="/">Case Study 3</Link>
-            <Link to="/">Case Study 4</Link>
+            <a href="/">Case Study 1</a>
+            <a href="/">Case Study 2</a>
+            <a href="/">Case Study 3</a>
+            <a href="/">Case Study 4</a>
           </div>
           <div className="footer-link-items">
             <h2>Connect with Us</h2>
-            <Link to="/">Instagram</Link>
-            <Link to="/">Facebook</Link>
-            <Link to="/">Youtube</Link>
-            <Link to="/">Twitter</Link>
+            <a href="/">Instagram</a>
+            <a href="/">Facebook</a>
+            <a href="/">Youtube</a>
+            <a href="/">Twitter</a>
           </div>
         </div>
       </div>
       <section className="social-media">
         <div className="social-media-wrap">
           <div className="footer-logo">
-            <Link to="/" className="social-logo">
+            <a href="/" className="social-logo">
               <img src={logo} alt="logoimage" />
-            </Link>
+            </a>
           </div>
           <small className="website-rights">
             Saito Consulting Co.,Ltd.© 2021
           </small>
           <div className="social-icons">
-            <Link
-              className="social-icon-link facebook"
-              to="/"
-              target="_blank"
-              aria-label="Facebook"
-            >
+            <a href="/" className="social-icon-link facebook">
               <GrFacebook />
-            </Link>
-            <Link
-              className="social-icon-link instagram"
-              to="/"
-              target="_blank"
-              aria-label="Instagram"
-            >
+            </a>
+            <a href="/" className="social-icon-link instagram">
               <GrInstagram />
-            </Link>
-            <Link
-              className="social-icon-link youtube"
-              to="/"
-              target="_blank"
-              aria-label="Youtube"
-            >
+            </a>
+            <a href="/" className="social-icon-link youtube">
               <GrYoutube />
-            </Link>
-            <Link
-              className="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="Twitter"
-            >
+            </a>
+            <a href="/" className="social-icon-link twitter">
               <GrTwitter />
-            </Link>
-            <Link
-              className="social-icon-link twitter"
-              to="/"
-              target="_blank"
-              aria-label="LinkedIn"
-            >
+            </a>
+            <a href="/" className="social-icon-link twitter">
               <GrLinkedin />
-            </Link>
+            </a>
           </div>
         </div>
       </section>

@@ -4,9 +4,10 @@ import { Carousel } from "antd";
 import heroimage1 from "../../images/hero1.png";
 import heroimage2 from "../../images/hero2.png";
 import heroimage3 from "../../images/hero3.png";
+
 function HeroSection() {
   return (
-    <div className="caro-wrapper" id="home">
+    <div className="caro-wrapper">
       <Carousel autoplay>
         <div>
           <img className="hero" src={heroimage1} alt="adf" />

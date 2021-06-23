@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Link as Scrolling } from "react-scroll";
+import { Link } from "react-scroll";
 import { GoX, GoThreeBars } from "react-icons/go";
 import "./Navbar.css";
 import logo from "../../images/logo.png";
@@ -36,8 +36,8 @@ function Navbar() {
           </div>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Scrolling
-                to="home-scroll"
+              <Link
+                to="home"
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -46,11 +46,12 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Home
-              </Scrolling>
+              </Link>
             </li>
             <li className="nav-item">
-              <Scrolling
-                to="about-scroll"
+              <Link
+                to="about"
+                offset={-110}
                 activeClass="active"
                 spy={true}
                 smooth={true}
@@ -59,12 +60,12 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 About
-              </Scrolling>
+              </Link>
             </li>
             <li className="nav-item">
-              <Scrolling
+              <Link
                 activeClass="active"
-                to="services-scroll"
+                to="services"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -72,13 +73,13 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Services
-              </Scrolling>
+              </Link>
             </li>
 
             <li className="nav-item">
-              <Scrolling
+              <Link
                 activeClass="active"
-                to="access-scroll"
+                to="access"
                 spy={true}
                 smooth={true}
                 duration={1000}
@@ -86,7 +87,7 @@ function Navbar() {
                 onClick={closeMobileMenu}
               >
                 Access
-              </Scrolling>
+              </Link>
             </li>
           </ul>
         </div>
