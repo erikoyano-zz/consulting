@@ -43,4 +43,8 @@
   .text {
     margin-left: 0;
   }
+
+  #about.component-block {
+    border: 3px solid red;
+  }
 }
