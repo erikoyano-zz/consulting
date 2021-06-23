@@ -16,3 +16,14 @@
 .hero {
   width: 1200px;
 }
+
+@media screen and (max-width: 960px) {
+  .caro-wrapper {
+    padding: 4rem 0 4rem 0;
+  }
+}
+@media screen and (max-width: 425px) {
+  .caro-wrapper {
+    padding: 0;
+  }
+}
